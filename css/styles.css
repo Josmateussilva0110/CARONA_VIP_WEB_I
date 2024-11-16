@@ -1,0 +1,87 @@
+:root {
+    /* Cores */
+    --_fundo_branco: #f9f9fa;
+    --cinza: #6f6f70;
+    --preto: #172323;
+}
+
+
+
+body {
+    margin: 0;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    height: 100vh;
+}
+
+
+.container {
+    display: flex;
+    height: 100%;
+}
+
+
+.esquerda {
+    flex: 1;
+}
+
+.esquerda img {
+    padding-left: 5;
+    width: 415px; 
+    height: 100vh; 
+}
+
+.direita {
+    width: 73%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--_fundo_branco);
+}
+
+.form-container {
+    background-color: var(--_fundo_branco);
+    padding: 50px;
+    width: 300px;
+    padding: 40;
+}
+
+
+.form-container h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-container h6 {
+    text-align: center;
+    color: var(--cinza);
+}
+
+
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+.form-group input {
+    width: 100%;
+    padding: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.submit-btn {
+    background-color: var(--preto);
+    color: var(--_fundo_branco);
+    padding: 16px;
+    border: none;
+    border-radius: 4px;
+    width: 111%;
+    cursor: pointer;
+    font-size: 16px;
+}
+.submit-btn:hover {
+    background-color: #555;
+}
