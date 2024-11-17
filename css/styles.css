@@ -62,26 +62,49 @@ body {
     margin-bottom: 15px;
     text-align: left;
 }
+
 .form-group label {
     display: block;
     margin-bottom: 5px;
 }
+
 .form-group input {
-    width: 100%;
+    width: 350px;
     padding: 16px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    box-sizing: border-box;
 }
+
+
 .submit-btn {
     background-color: var(--preto);
     color: var(--_fundo_branco);
     padding: 16px;
     border: none;
     border-radius: 4px;
-    width: 111%;
+    width: 117%;
     cursor: pointer;
     font-size: 16px;
 }
 .submit-btn:hover {
     background-color: #555;
+}
+
+
+.input-with-icon {
+    position: relative;
+}
+
+.input-with-icon input {
+    padding-left: 50px; /* Espaço para o ícone */
+}
+
+.input-with-icon img {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px; /* Tamanho consistente do ícone */
+    height: auto; /* Para manter as proporções */
 }
