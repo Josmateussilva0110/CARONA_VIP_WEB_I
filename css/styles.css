@@ -41,35 +41,31 @@ body {
 .form-container {
     background-color: var(--_fundo_branco);
     padding: 50px;
-    width: 300px;
-    padding: 40;
+    width: 400px; /* Largura ajustada para corresponder aos inputs */
+    text-align: center; /* Centraliza os textos no eixo horizontal */
+    margin: 0 auto; /* Centraliza o formulário no eixo horizontal */
 }
-
 
 .form-container h3 {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 10px; /* Espaçamento menor para ficar alinhado */
 }
 
 .form-container h6 {
     text-align: center;
     color: var(--cinza);
+    margin-bottom: 20px; /* Espaçamento antes do formulário */
 }
-
-
 
 .form-group {
     margin-bottom: 15px;
-    text-align: left;
+    text-align: center; /* Alinha os inputs ao centro */
 }
 
-.form-group label {
-    display: block;
-    margin-bottom: 5px;
-}
 
 .form-group input {
-    width: 350px;
+    width: 100%; /* Ajusta a largura para se alinhar ao container */
+    max-width: 350px; /* Define um limite para os inputs */
     padding: 16px;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -83,7 +79,7 @@ body {
     padding: 16px;
     border: none;
     border-radius: 4px;
-    width: 117%;
+    width: 88%;
     cursor: pointer;
     font-size: 16px;
 }
@@ -92,17 +88,19 @@ body {
 }
 
 
-.input-with-icon {
+.imagem-no-input {
     position: relative;
 }
 
-.input-with-icon input {
-    padding-left: 50px; /* Espaço para o ícone */
+.imagem-no-input input {
+    padding-left: 40px; /* Espaço para o ícone */
+    width: 100%; /* Para respeitar o alinhamento */
+    max-width: 350px; /* Largura alinhada */
 }
 
-.input-with-icon img {
+.imagem-no-input img {
     position: absolute;
-    left: 15px;
+    left: 32px;
     top: 50%;
     transform: translateY(-50%);
     width: 20px; /* Tamanho consistente do ícone */
