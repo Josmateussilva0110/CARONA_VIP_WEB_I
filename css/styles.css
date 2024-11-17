@@ -114,4 +114,12 @@ body {
     font-size: 12px; 
     color: var(--preto); 
     padding: 5px 10px;
+    display: flex; 
+    align-items: center; 
+}
+
+.texto-inferior-direito img {
+    width: 16px; /* Ajuste o tamanho da imagem conforme necessário */
+    height: 16px;
+    margin-right: 8px; /* Espaço entre a imagem e o texto */
 }
