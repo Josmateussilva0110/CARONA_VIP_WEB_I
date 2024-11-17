@@ -41,8 +41,8 @@ body {
 .form-container {
     background-color: var(--_fundo_branco);
     padding: 50px;
-    width: 400px; /* Largura ajustada para corresponder aos inputs */
-    text-align: center; /* Centraliza os textos no eixo horizontal */
+    width: 400px; 
+    text-align: center;
     margin: 0 auto; /* Centraliza o formulário no eixo horizontal */
 }
 
@@ -59,14 +59,14 @@ body {
 
 .form-group {
     margin-bottom: 15px;
-    text-align: center; /* Alinha os inputs ao centro */
+    text-align: center; 
 }
 
 
 .form-group input {
-    width: 100%; /* Ajusta a largura para se alinhar ao container */
+    width: 100%; 
     max-width: 350px; /* Define um limite para os inputs */
-    padding: 16px;
+    padding: 18px;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
@@ -84,7 +84,7 @@ body {
     font-size: 16px;
 }
 .submit-btn:hover {
-    background-color: #555;
+    background-color: var(--cinza);
 }
 
 
@@ -105,4 +105,13 @@ body {
     transform: translateY(-50%);
     width: 20px; /* Tamanho consistente do ícone */
     height: auto; /* Para manter as proporções */
+}
+
+.texto-inferior-direito {
+    position: fixed; 
+    bottom: 10px; 
+    right: 10px; 
+    font-size: 12px; 
+    color: var(--preto); 
+    padding: 5px 10px;
 }
