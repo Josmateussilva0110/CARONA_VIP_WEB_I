@@ -129,157 +129,6 @@ h3, h6 {
     margin-right: 8px; /* Espaço entre a imagem e o texto */
 }
 
-<<<<<<< HEAD
-
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-
-.left-panel {
-    position: relative;
-    width: 40%;
-    background-color: #b00000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.background-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('path/to/your/image.jpg'); /* Substitua pelo caminho da sua imagem */
-    background-size: cover;
-    background-position: center;
-    opacity: 0.9;
-}
-
-.logo {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    font-size: 24px;
-    font-weight: bold;
-    color: white;
-}
-
-.right-panel {
-    width: 60%;
-    padding: 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-color: #ffffff;
-    position: relative;
-}
-
-/* Posiciona "Já é membro?" no canto superior direito */
-.login-link {
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    font-size: 12px;
-    color: #666;
-}
-
-.login-link a {
-    color: #666;
-    text-decoration: none;
-    font-weight: normal;
-    font-size: 12px;
-}
-
-.login-link a:hover {
-    color: #333;
-    text-decoration: underline;
-}
-
-/* Posiciona "Precisa de ajuda?" no canto inferior direito */
-.help-link {
-    position: absolute;
-    bottom: 10px;
-    right: 20px;
-    font-size: 12px;
-    color: #666;
-}
-
-.help-link a {
-    color: #666;
-    text-decoration: none;
-}
-
-.help-link a:hover {
-    color: #333;
-    text-decoration: underline;
-}
-
-.form-container {
-    max-width: 400px;
-    margin: 0 auto;
-}
-
-h1, h2 {
-    text-align: center;
-    color: #333;
-    margin-bottom: 10px;
-}
-
-.input-group {
-    display: flex;
-    align-items: center;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-bottom: 15px;
-    padding: 10px;
-}
-
-.input-group .icon {
-    color: #666;
-    font-size: 16px;
-    margin-right: 10px;
-}
-
-.input-group input {
-    border: none;
-    outline: none;
-    width: 100%;
-    font-size: 16px;
-}
-
-.submit-btn {
-    width: 100%;
-    padding: 12px;
-    font-size: 16px;
-    background-color: #333;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.submit-btn:hover {
-    background-color: #555;
-}
-/* Estilo básico para o link */
-.back-link {
-    color: #666;         /* Cor do texto (azul ou escolha outra cor) */
-    text-decoration: none;  /* Remove o sublinhado */
-    font-family: Arial, sans-serif; /* Define uma fonte padrão */
-    font-size: 14px;        /* Ajusta o tamanho da fonte */
-}
-
-/* Efeito ao passar o mouse */
-.back-link:hover {
-    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
-    color: #666;             /* Cor mais escura para o texto no hover */
-}
-=======
 .texto-superior-direito {
     position: absolute; 
     top: 10px; 
@@ -315,4 +164,37 @@ h1, h2 {
     text-decoration: none;
     color: var(--cinza);
 }
->>>>>>> main
+
+.container-rotas{
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    width: 350px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #000;
+}
+
+p {
+    font-size: 14px;
+    color: #555;
+}
+
+form {
+    margin-top: 20px;
+}
+
