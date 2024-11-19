@@ -13,6 +13,10 @@ body {
     height: 100vh;
 }
 
+h3, h6 {
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+}
+
 
 .container {
     display: flex;
@@ -116,6 +120,7 @@ body {
     padding: 5px 10px;
     display: flex; 
     align-items: center; 
+    cursor: pointer;
 }
 
 .texto-inferior-direito img {
@@ -124,6 +129,7 @@ body {
     margin-right: 8px; /* Espaço entre a imagem e o texto */
 }
 
+<<<<<<< HEAD
 
 
 * {
@@ -273,3 +279,40 @@ h1, h2 {
     text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
     color: #666;             /* Cor mais escura para o texto no hover */
 }
+=======
+.texto-superior-direito {
+    position: absolute; 
+    top: 10px; 
+    right: 12px; 
+    font-size: 12px; 
+    color: var(--preto); 
+    padding: 5px 10px;
+    display: flex; 
+    align-items: center; 
+}
+
+.texto-superior-direito a {
+    color: var(--preto);
+}
+
+.texto-superior-direito p {
+    color: var(--cinza);
+}
+
+.texto-superior-esquerdo {
+    position: absolute; 
+    top: 10px; 
+    left: 410px; 
+    font-size: 12px; 
+    color: var(--preto); 
+    padding: 5px 10px;
+    display: flex; 
+    align-items: center; 
+}
+
+.texto-superior-esquerdo a {
+    color: var(--preto);
+    text-decoration: none;
+    color: var(--cinza);
+}
+>>>>>>> main
