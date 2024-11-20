@@ -34,6 +34,7 @@ h3, h6 {
     height: 100vh; 
 }
 
+
 .direita {
     width: 73%;
     display: flex;
@@ -170,7 +171,7 @@ h3, h6 {
 }
 
 .fundo-container {
-    background-image: url('../imagens/home/fundo.png');
+    background-image: url('../imagens/home/sessao_01/fundo.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -178,7 +179,8 @@ h3, h6 {
 
 
 .sessao-01 {
-    padding: 80px;
+    position: relative;
+    padding: 270px;
     color: var(--preto);
 }
 
@@ -247,7 +249,7 @@ h3, h6 {
 /* BARRA DE PESQUISA*/
 
 .search-bar {
-    margin: -60px auto 0 auto;
+    margin: -250px auto 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -269,6 +271,7 @@ h3, h6 {
     outline: none;
     font-size: 16px;
     border-radius: 20px 20px;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.3);
 }
 
 .search-bar button {
@@ -278,7 +281,7 @@ h3, h6 {
     padding: 14px;
     margin: 4px;
     width: 95px;
-    border-radius: 20px 20px;
+    border-radius: 25px 25px;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -293,4 +296,59 @@ h3, h6 {
 .search-bar .button-icon {
     width: 20px; /* Ajuste o tamanho da imagem */
     height: 20px;
+}
+
+.imagem-sessao-01 {
+    position: absolute; 
+    right: 80px; 
+    padding-right: 80px;
+    top: 60%; 
+    transform: translateY(-50%); 
+}
+
+.imagem-sessao-01 img {
+    width: 420px;
+    height: auto;
+}
+
+.texto-esquerda-sessao-01 {
+    position: absolute;
+    padding-left: 115px;
+    left:30px;
+    top: 60%;
+    transform: translateY(-50%); 
+}
+
+.texto-esquerda-sessao-01 img {
+    width: 400px;
+    height: auto;
+}
+
+.seguir-rotas {
+    background-color: var(--preto);
+    color: var(--_fundo_branco);
+    border: none;
+    padding: 12px;
+    width: 180px;
+    margin-left: 37px;
+    border-radius: 25px 25px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s;
+}
+
+.seguir-rotas img {
+    width: 20px;
+    height: 20px;
+    margin: 7px;
+}
+
+.seguir-rotas a {
+    font-size: 12px;
+}
+
+.seguir-rotas:hover {
+    background-color: #003f47;
 }
