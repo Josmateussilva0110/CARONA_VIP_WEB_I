@@ -199,13 +199,13 @@ h3, h6 {
 
 .sessao-02 {
     padding: 270px;
-    background-color: #ffffff;
+    background-color: var(--_fundo_branco);
 }
 
 
 .sessao-03 {
     padding: 150px;
-    background-color: red;
+    background-color: var(--_fundo_branco);
 }
 
 .content-sessao-01 {
@@ -217,11 +217,21 @@ h3, h6 {
     position: relative;
 }
 
+.content-sessao-03 {
+    text-align: center;
+}
+
 
 .content-sessao-02 p {
     font-family: 'Times New Roman', sans-serif;
     font-size: 30px;
     margin: -200px auto 0 auto;
+}
+
+.content-sessao-03 p {
+    font-family: 'Times New Roman', sans-serif;
+    font-size: 30px;
+    margin: -110px auto 0 auto;
 }
 
 .imagem-seguranca {
@@ -494,3 +504,89 @@ h3, h6 {
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+    padding: 40px;
+    background-color: var(--_fundo_branco);
+}
+
+
+.card {
+    background-color: #fff;
+    border-radius: 17px;
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 270px;
+    height: 300px;
+    text-align: center;
+}
+
+.card h2 {
+    font-size: 18px;
+    color: var(--preto);
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 14px;
+    color: var(--preto);
+    margin: 5px 0;
+    padding-top: 10px;
+}
+
+.origem {
+    display: flex;
+    flex-direction: column; /* Organiza os subgrupos verticalmente */
+    align-items: flex-start; /* Alinha à esquerda */
+    gap: 18px; /* Espaço entre as seções */
+    padding-top: 20px;
+}
+
+.origem p {
+    font-size: 18px;
+}
+
+.valor-viagem {
+    transform: translateY(-80%); 
+    margin-left: 175px;
+}
+
+.valor-viagem button {
+    background-color: #7209b7;
+    padding: 9px;
+    color: var(--_fundo_branco);
+    border-radius: 18px;
+    width: 90px;
+    height: auto;
+    border: none;
+}
+
+
+.destino-viagem p {
+    margin: 0;
+    padding-left: 22px;
+    font-size: 12px;
+    color: var(--preto); 
+}
+
+.botao-detalhes {
+    padding-top: 35px;
+    text-align: center;
+}
+
+.botao-detalhes button {
+    background-color: #ff7300;
+    padding: 9px;
+    color: var(--_fundo_branco);
+    border-radius: 15px;
+    border: none;
+    width: 120px;
+    height: auto;
+}
+
+.botao-detalhes button:hover {
+    background-color: #ff5700;
+}
