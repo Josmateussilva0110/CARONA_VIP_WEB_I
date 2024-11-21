@@ -549,31 +549,53 @@ h3, h6 {
     font-size: 18px;
 }
 
+.destino {
+    position: absolute;
+    transform: translateY(-95%);
+}
+
+.destino p {
+    padding-left: 30px;
+}
+
+.imagem-localizacao-destino {
+    position: relative;
+    padding-left: 20px; 
+    width: 100%;
+    max-width: 350px;
+}
+
+
+.imagem-localizacao-destino img {
+    position: absolute;
+    left: 10px;
+    top: -10%;
+    padding-top: 16px;
+    transform: translateY(-1%);
+    width: 15px; /* Tamanho consistente do ícone */
+    height: auto; /* Para manter as proporções */
+}
+
+
 .valor-viagem {
-    transform: translateY(-80%); 
-    margin-left: 175px;
+    transform: translateY(-50%); 
+    margin-left: 160px;
 }
 
 .valor-viagem button {
     background-color: #7209b7;
-    padding: 9px;
+    padding: 10px;
     color: var(--_fundo_branco);
     border-radius: 18px;
-    width: 90px;
+    width: 115px;
     height: auto;
     border: none;
 }
 
 
-.destino-viagem p {
-    margin: 0;
-    padding-left: 22px;
-    font-size: 12px;
-    color: var(--preto); 
-}
 
 .botao-detalhes {
-    padding-top: 35px;
+    padding-top: 65px;
     text-align: center;
 }
 
