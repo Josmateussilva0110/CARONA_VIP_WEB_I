@@ -505,7 +505,7 @@ h3, h6 {
 }
 
 
-.container {
+.container_sessao-03 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 60px;
