@@ -13,16 +13,21 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background: url('../imagens//Detalhes/Back.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #000;
+    backdrop-filter: blur(8px); /* Desfoque aplicado */
   }
   
   .container {
     width: 90%;
-    max-width: 400px;
+    max-width: 600px;
     background-color: #fff;
     border-radius: 15px;
-    padding: 20px;
+    padding: 60px;
     color: #333;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    
   }
   
   .header p {
@@ -34,9 +39,10 @@
   }
   
   .content h1 {
-    font-size: 18px;
+    font-size: 25px;
     text-align: center;
     margin-bottom: 20px;
+    margin-top: -30px; 
   }
   
   .content h1 span {
@@ -60,8 +66,8 @@
   } 
   
   .driver-photo {
-    width: 80px; /* Tamanho maior para a foto */
-    height: 80px;
+    width: 150px; /* Tamanho maior para a foto */
+    height: 150px;
     border-radius: 50%;
     margin-right: 15px;
     margin-top: 20px;  
@@ -74,9 +80,8 @@
   
   .driver-name {
     font-weight: bold;
-    font-size: 16px; /* Tamanho ajustado */
+    font-size: 22px; /* Tamanho ajustado */
     color: #333; /* Cor escura */
-    margin-top: 10px;
   }
   
   .driver-rating {
@@ -86,7 +91,7 @@
     border-radius: 10px;
     font-size: 12px;
     display: inline-block;
-    margin-top: 10px;
+    margin-top: 20px;
   }
   
   .trip-info {
@@ -112,7 +117,7 @@
   .route {
     display: flex;
     align-items: center;
-    gap: 5px; /* Espaço entre o texto e o ícone */
+    gap: 7px; /* Espaço entre o texto e o ícone */
 }
   
   .reserve-btn {
@@ -131,9 +136,19 @@
 
     display: block;
     margin: 0 auto;
-    margin-top: 50px;
+    margin-top: 100px;
   }
-  
+  .send-btn:hover {
+    background-color: #e69500; /* Cor mais escura ao passar o mouse */
+    transform: scale(1.05); /* Leve aumento no tamanho */
+    transition: all 0.3s ease; /* Suavização da transição */
+  }
+
+  .call-btn:hover {
+    background-color: rgba(0, 0, 0, 0.1); /* Fundo semi-transparente no hover */
+    border-radius: 50%; /* Arredondado */
+    transition: all 0.3s ease; /* Suavização da transição */
+  }
 
   .contact-section {
     display: flex;
@@ -142,7 +157,8 @@
     background-color: none;
     border-radius: 15px;
     padding: 10px 15px;
-    margin-top: 0px;
+    margin-top: 10px;
+    
   }
   
   .message-input {
@@ -160,7 +176,10 @@
     background-color: #ddd;
     padding: 10px 15px;
     border-radius: 25px;
-    text-align: left; 
+    text-align: left;
+    resize: none; /* Desativa o redimensionamento */
+    height: 40px; /* Altura fixa para o balão */
+    box-sizing: border-box; 
   }
   
   .call-btn {
@@ -174,13 +193,10 @@
     width: 20px;
     height: 20px;
   }
-  
-  .call-btn:hover {
-    background-color: #555;
-  }
+
   
 .cidade {
-  font-size: 14px;
+  font-size: 15px;
   font-weight: bold;
   margin: 0;
   margin-right: 29px;
