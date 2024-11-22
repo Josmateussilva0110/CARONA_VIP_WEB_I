@@ -1,0 +1,222 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #1c1c1c;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 400px;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    color: #333;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header p {
+    color: #bbb;
+    text-transform: uppercase;
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  .content h1 {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .content h1 span {
+    color: orange;
+    font-weight: bold;
+  }
+  
+  .driver-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .driver-info {
+    display: flex;
+    align-items: center;
+  } 
+  
+  .driver-photo {
+    width: 80px; /* Tamanho maior para a foto */
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 15px;
+    margin-top: 20px;  
+  }
+  
+  .driver-details {
+    text-align: left;
+  }
+
+  
+  .driver-name {
+    font-weight: bold;
+    font-size: 16px; /* Tamanho ajustado */
+    color: #333; /* Cor escura */
+    margin-top: 10px;
+  }
+  
+  .driver-rating {
+    background-color: #372D3B; /* Fundo do botão de rating */
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 12px;
+    display: inline-block;
+    margin-top: 10px;
+  }
+  
+  .trip-info {
+    text-align: right;
+    margin-top: 30px; /* Adiciona espaço superior para descer o conteúdo */
+  }
+  
+  .plate {
+    font-weight: bold;
+    font-size: 21px;
+    color: #333;
+    margin-bottom: 3px; /* Adiciona espaço entre a placa e os outros itens */
+  }  
+  
+  .car-model,
+  .route,
+  .time {
+    font-size: 14px;
+    color: #555; /* Cor mais suave */
+  }
+
+
+  .route {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Espaço entre o texto e o ícone */
+}
+  
+  .reserve-btn {
+    width: 52%;
+    padding: 10px;
+    background-color: #ff9300;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px white;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+
+
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+  
+
+  .contact-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: none;
+    border-radius: 15px;
+    padding: 10px 15px;
+    margin-top: 0px;
+  }
+  
+  .message-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  .message-box {
+    flex: 1;
+    font-size: 14px;
+    color: #555;
+    background-color: #ddd;
+    padding: 10px 15px;
+    border-radius: 25px;
+    text-align: left; 
+  }
+  
+  .call-btn {
+    background: none;
+    border: none;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+  .call-icon {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .call-btn:hover {
+    background-color: #555;
+  }
+  
+.cidade {
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0;
+  margin-right: 29px;
+}
+
+.icone-linha {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px; /* Espaço entre texto e ícone */
+  margin-top: 4px;
+}
+
+.icone {
+  width: 11px; /* Reduz o tamanho da imagem */
+  height: auto;
+  margin-top: -3px;
+  
+}
+
+.destino {
+  font-weight: bold;
+  margin-right: -5px;
+}
+
+.hora {
+  font-size: 16px;
+  margin-top: 4px;
+  font-weight: bold;
+  margin-right: 2px;
+  }
+
+.nomeCarro{
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0;
+    margin-right: 10px;
+    margin-bottom: 3px; /* Adiciona espaço entre a placa e os outros itens */
+  }
