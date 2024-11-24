@@ -98,7 +98,7 @@ body {
     position: fixed; 
     bottom: 10px; 
     right: 10px; 
-    font-size: 12px; 
+    font-size: 16px; 
     color: var(--preto); 
     padding: 5px 10px;
     display: flex; 
@@ -115,8 +115,8 @@ body {
 .texto-superior-esquerdo {
     position: absolute; 
     top: 10px; 
-    left: 410px; 
-    font-size: 12px; 
+    left: 20px; 
+    font-size: 16px; 
     color: var(--preto); 
     padding: 5px 10px;
     display: flex; 
@@ -126,7 +126,6 @@ body {
 .texto-superior-esquerdo a {
     color: var(--preto);
     text-decoration: none;
-    color: var(--cinza);
 }
 
 
@@ -148,17 +147,28 @@ body {
 }
 
 
-.imagem-no-input-data-hora img {
-    max-width: 40px; 
-    margin-bottom: 5px; 
+.imagem-no-input-data-hora {
+    position: relative;
 }
 
 
 .imagem-no-input-data-hora input {
+    padding-left: 40px;
     width: 132px; 
+    max-width: 350px;
     padding: 16px;
     border: 1px solid #ccc;
     border-radius: 5px;
     text-align: center; 
     border: 1px solid var(--preto);
 }   
+
+
+.imagem-no-input-data-hora img {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 18px; 
+    height: auto;
+}
