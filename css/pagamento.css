@@ -80,9 +80,9 @@ body {
 
 
 .imagem-no-input img {
-    width: 45px; /* Tamanho da imagem do cartão */
+    width: 45px; 
     height: auto;
-    margin-left: 10px; /* Adiciona margem à esquerda, movendo a imagem para a direita */
+    margin-left: 10px;
 
 
 }
@@ -102,8 +102,8 @@ body {
 
 .botao-cancel {
     display: flex;
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; 
+    align-items: center; 
     /*border: solid 1px red;*/
     margin-bottom: 10px;
 }
@@ -123,13 +123,13 @@ body {
 }
 
 .cancel-btn {
-    background-color: #fff; /* Cor de fundo vermelha para o botão de cancelar */
-    color: #000; /* Cor do texto */
-    border: none; /* Remove as bordas */
-    padding: 10px 20px; /* Espaçamento interno */
-    font-size: 16px; /* Tamanho da fonte */
-    cursor: pointer; /* Altera o cursor para indicar clique */
-    border-radius: 25px; /* Bordas arredondadas */
+    background-color: #fff; 
+    color: #000; 
+    border: none; 
+    padding: 10px 20px; 
+    font-size: 16px;
+    cursor: pointer; 
+    border-radius: 25px;
     width: 80%;
     text-align: center;
     transition: background-color 0.3s ease;
@@ -137,11 +137,10 @@ body {
 }
 
 .submit-btn:hover {
-    background-color: #45a049; /* Cor de fundo ao passar o mouse no botão de compra */
+    background-color: #45a049; 
 }
-
 .cancel-btn:hover {
-    background-color: #c9302c; /* Cor de fundo ao passar o mouse no botão de cancelar */
+    background-color: #c9302c; 
 }
 
 
@@ -168,6 +167,49 @@ body {
 
 
 
+/* Ajustes gerais para dispositivos menores */
+@media (max-width: 768px) {
+    .area_externa {
+        flex-direction: column; /* Empilha as áreas verticalmente */
+        height: auto; /* Permite altura flexível */
+        padding: 10px;
+    }
+
+    .metodo-pagamento,
+    .resumo-compra {
+        width: 80%; 
+        margin-bottom: 15px; 
+        margin-left: 15px;
+    }
+
+    .submit-btn, .cancel-btn {
+        width: 100%; 
+    }
+}
+
+/* Ajustes para telas muito pequenas, como smartphones */
+@media (max-width: 480px) {
+    .area-formulario h4 {
+        font-size: 14px; /* Reduz o tamanho da fonte */
+    }
+
+    .imagem-no-input img {
+        width: 35px; /* Reduz o tamanho da imagem */
+    }
+
+    .valor {
+        width: 80px; /* Ajusta largura do total */
+        margin-left: 10px;
+    }
+
+    .ajuda {
+        padding: 15px;
+        text-align: center; /* Centraliza o texto */
+    }
+}
+
+
+
 
 /*CSS da pagina do cartao e pix*/
 
@@ -177,13 +219,13 @@ body {
     display: flex; /* Layout flexível para dividir as áreas */
     justify-content: space-between; /* Espaço entre as duas áreas */
     gap: 20px; /* Espaço entre as áreas */
-    height: 400px; /* Aumenta a altura das áreas externas */
+    height: 440px; /* Aumenta a altura das áreas externas */
     margin: 10px;
 }
 
 .area-esquerda,
 .area-direita {
-    padding: 15px;
+    padding: 12px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para destacar */
     display: flex;
     flex-direction: column; /* Organiza os itens na vertical */
@@ -193,6 +235,7 @@ body {
 .area-esquerda {
     width: 50%; /* Reduz a largura da área de pagamento */
     border-right: solid 2px black;
+    
 }
 
 .area-direita {
@@ -203,16 +246,37 @@ body {
 .form-group {
     display: flex;
     flex-direction: column; /* Organiza na vertical */
-    margin-bottom: 10px;
+  
 }
+
+.form-group-date{
+    display: flex;
+    flex-direction:column;
+  
+  
+
+}
+.form-group-date input {
+    font-size: 14px; 
+    border: solid 1px #2c2828; 
+    margin-top: 2px;
+    width: 50%; 
+    padding: 5px;
+    height: 20px;
+    border-radius: 4px; 
+}
+
 
 .form-group input {
     font-size: 14px; 
     border: solid 1px #2c2828; 
     border-radius: 4px; 
     width: 60%; 
-    padding: 2px;
+    padding: 5px;
+    height: 20px;
 }
+
+
 
 .img-cartao{
     margin-right: 140px;
@@ -276,14 +340,71 @@ body {
 
 /*altera o fundo da tela pix e cartao*/
 .principal {
-    width: 100%; /* Ocupa 100% da largura */
-    height: 100vh; /* Ocupa 100% da altura do viewport */
+    width: 100%; 
+    height: calc(100vh - 20px); 
     background-color: #D9D9D9;
     align-items: center;
-    margin: 0; 
-    padding: 0; 
-    overflow-x: hidden;
+    margin: 0;
+    padding: 10px 0; 
+    overflow-x: hidden; 
 }
+
+
+
+/* Ajustes gerais para dispositivos médios */
+@media (max-width: 768px) {
+    .area-centro {
+        flex-direction: column; /* Empilha áreas na vertical */
+        height: auto; /* Altura ajustável */
+        gap: 10px; 
+    }
+
+    .area-esquerda, .area-direita {
+        width: 100%;
+        border-right: none;
+    }
+
+    .form-group input {
+        width: 90%; /* Ocupa quase toda a largura do container */
+    }
+
+    .img-cartao, .texto {
+        margin-right: 0; /* Remove espaçamento lateral */
+        text-align: center; /* Centraliza o texto */
+    }
+
+    .area-botoes {
+        flex-direction: column; /* Empilha os botões */
+        justify-content: center;
+        gap: 5px;
+    }
+
+    .btn, .btn-cancelar {
+        width: 100%; 
+    }
+}
+
+/* Ajustes específicos para telas muito pequenas, como smartphones */
+@media (max-width: 480px) {
+    .area-centro {
+        gap: 5px; /* Reduz ainda mais o espaço entre as áreas */
+    }
+
+    .form-group input {
+        font-size: 12px; 
+        padding: 8px;
+    }
+
+    .btn, .btn-cancelar {
+        font-size: 12px; /* Tamanho menor para botões */
+        padding: 8px 15px; /* Reduz o espaçamento interno */
+    }
+
+    .principal {
+        padding: 5px; /* Adiciona espaçamento interno menor */
+    }
+}
+
 /*CSS da pagina Pix*/
 
 
