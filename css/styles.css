@@ -221,6 +221,12 @@ h3, h6 {
     background-color: var(--verde_escuro);
 }
 
+.sessao-06 {
+    padding: 170px;
+    background-color: var(--_fundo_branco);
+}
+
+
 .content-sessao-01 {
     text-align: center;
 }
@@ -242,6 +248,14 @@ h3, h6 {
 .content-sessao-05 {
     text-align: center;
     position: relative;
+}
+
+.content-sessao-06 {
+    position: relative; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    max-width: 100%; 
 }
 
 
@@ -723,7 +737,7 @@ h3, h6 {
 
 .texto-sessao-05 h2 {
     position: absolute;
-    left: 360px;
+    left: 350px;
     padding: 20px;
     transform: translateY(-200%);
     word-wrap: break-word;
@@ -733,7 +747,7 @@ h3, h6 {
     position: absolute;
     max-width: 525px; 
     max-height: 130px;
-    left: 360px;
+    left: 350px;
     padding: 20px;
     transform: translateY(-75%);
     word-wrap: break-word;
@@ -744,11 +758,11 @@ h3, h6 {
     position: absolute;
     background-color: var(--_fundo_branco);
     border: none;
-    left: 255px;
+    left: 235px;
     padding: 12px;
     font-size: 12px;
     width: 95px;
-    margin-left: 300px;
+    margin-left: 295px;
     border-radius: 25px 25px;
     cursor: pointer;
     display: flex;
@@ -767,4 +781,60 @@ h3, h6 {
 .saiba-mais-botao-sessao-05:hover {
     background-color: rgb(236, 224, 224);
     color: var(--_fundo_branco);
+}
+
+.sessao-06-esquerda,
+.sessao-06-direita {
+    max-width: 525px; 
+    max-height: 130px;
+}
+
+.sessao-06-esquerda p,
+.sessao-06-direita p {
+    margin: 0;
+    padding: 20px;
+    word-wrap: break-word;
+    font-size: 15px;
+    transform: translateY(-140%);
+}
+
+.sessao-06-esquerda img {
+    position: absolute;
+    width: 150px;
+    height: auto;
+    left: -30px;
+    transform: translateY(-200%);
+}
+
+.sessao-06-direita p {
+    text-align: right;
+}
+
+#contato-sessao-06 {
+    position: absolute;
+    right: 130px;
+    transform: translateY(-180%);
+}
+
+#ajuda-sessao-06 {
+    position: absolute;
+    right: -50px;
+    transform: translateY(-180%);
+}
+
+.sessao-06-direita a {
+    font-size: 13px;
+    cursor: pointer;
+}
+
+#faq-sessao-06 {
+    position: absolute;
+    right: 150px;
+    transform: translateY(-285%);
+}
+
+#help-sessao-06 {
+    position: absolute;
+    right: -50px;
+    transform: translateY(-285%);
 }
