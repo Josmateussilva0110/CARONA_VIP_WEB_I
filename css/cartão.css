@@ -141,6 +141,8 @@ body {
 
 .btn-cancelar{
     background-color: white;
+    text-decoration: none;
+    color: black;
     border: none; 
     padding: 10px 20px; /* Espaçamento interno */
     text-align: center;
@@ -151,6 +153,8 @@ body {
     margin-top: 20px;
     transition: background-color 0.3s ease;
 }
+
+
 
 .btn-cancelar:hover{
     background-color: #b46557; 

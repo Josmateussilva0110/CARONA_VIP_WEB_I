@@ -122,6 +122,8 @@
   
   .reserve-btn {
     width: 52%;
+    text-align: center;
+    text-decoration: none;
     padding: 10px;
     background-color: #ff9300;
     color: white;

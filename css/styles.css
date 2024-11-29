@@ -13,6 +13,7 @@ body {
     height: 100vh;
 }
 
+
 h3, h6 {
     font-family: 'Zen Kaku Gothic Antique', sans-serif;
 }
@@ -20,7 +21,7 @@ h3, h6 {
 
 .container {
     display: flex;
-    height: 100%;
+    height: 99%;
 }
 
 
@@ -31,12 +32,13 @@ h3, h6 {
 .esquerda img {
     padding-left: 5;
     width: 415px; 
-    height: 100vh; 
+    height: 725px; 
 }
 
 
 .direita {
     width: 73%;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -605,21 +607,24 @@ h3, h6 {
 
 
 .botao-detalhes {
-    padding-top: 65px;
+    padding-top: 55px;
     text-align: center;
 }
 
-.botao-detalhes button {
+.botao-detalhes a {
+    display: inline-block;
     background-color: #ff7300;
-    padding: 9px;
+    padding: 12px 30px; 
+    font-size: 16px; 
     color: var(--_fundo_branco);
-    border-radius: 15px;
+    border-radius: 18px;
     border: none;
-    width: 120px;
-    height: auto;
+    text-decoration: none;
+    width: auto;
+    height: auto; 
 }
 
-.botao-detalhes button:hover {
+.botao-detalhes a:hover {
     background-color: #ff5700;
 }
 
