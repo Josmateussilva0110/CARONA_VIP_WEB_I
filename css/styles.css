@@ -22,7 +22,7 @@ h3, h6 {
 
 .container {
     display: flex;
-    height: 99%;
+    height: 100%;
 }
 
 
@@ -31,9 +31,10 @@ h3, h6 {
 }
 
 .esquerda img {
+    display: block;
     padding-left: 5;
     width: 415px; 
-    height: 725px; 
+    height: 729px; 
 }
 
 
