@@ -6,6 +6,17 @@ body {
    
 }
 
+/*altera o fundo da tela pix e cartao*/
+.principal {
+    width: 100%; 
+    height: calc(100vh - 20px); 
+    background-color: #D9D9D9;
+    align-items: center;
+    margin: 0;
+    padding: 10px 0; 
+    overflow-x: hidden; 
+}
+
 .container {
    
    margin: 0 auto;
@@ -38,11 +49,11 @@ body {
 }
 
 .metodo-pagamento {
-    width: 32%; /* Reduz a largura da área de pagamento */
+    width: 500px; /* Reduz a largura da área de pagamento */
 }
 
 .resumo-compra {
-    width: 30%; /* Ajusta a largura da área de resumo */
+    width: 500px; /* Ajusta a largura da área de resumo */
 }
 
 .text-rsm{
@@ -69,7 +80,7 @@ body {
 }
 /* Estilo para o formulário de pagamento */
 .area-formulario h4 {
-    margin: 10px 0;
+    margin: 3px 0;
 }
 
 .imagem-no-input{
@@ -167,51 +178,6 @@ body {
 }
 
 
-
-/* Ajustes gerais para dispositivos menores */
-@media (max-width: 768px) {
-    .area_externa {
-        flex-direction: column; /* Empilha as áreas verticalmente */
-        height: auto; /* Permite altura flexível */
-        padding: 10px;
-    }
-
-    .metodo-pagamento,
-    .resumo-compra {
-        width: 80%; 
-        margin-bottom: 15px; 
-        margin-left: 15px;
-    }
-
-    .submit-btn, .cancel-btn {
-        width: 100%; 
-    }
-}
-
-/* Ajustes para telas muito pequenas, como smartphones */
-@media (max-width: 480px) {
-    .area-formulario h4 {
-        font-size: 14px; /* Reduz o tamanho da fonte */
-    }
-
-    .imagem-no-input img {
-        width: 35px; /* Reduz o tamanho da imagem */
-    }
-
-    .valor {
-        width: 80px; /* Ajusta largura do total */
-        margin-left: 10px;
-    }
-
-    .ajuda {
-        padding: 15px;
-        text-align: center; /* Centraliza o texto */
-    }
-}
-
-
-
-
 /*CSS da pagina do cartao e pix*/
 
 .area-centro{
@@ -239,6 +205,7 @@ body {
     
 }
 
+    
 .area-direita {
     width: 40%; /* Ajusta a largura da área de resumo */
     
@@ -339,116 +306,86 @@ body {
 }
 
 
-/*altera o fundo da tela pix e cartao*/
-.principal {
-    width: 100%; 
-    height: calc(100vh - 20px); 
-    background-color: #D9D9D9;
-    align-items: center;
-    margin: 0;
-    padding: 10px 0; 
-    overflow-x: hidden; 
+/* Ajustes gerais para dispositivos menores */
+@media (max-width: 768px) {
+    .container h1 {
+        text-align: center; /* Centraliza o título horizontalmente */
+        color: #fff; /* Cor do texto */
+        font-size: 24px; /* Ajuste o tamanho da fonte conforme necessário */
+        margin: 20px 0; /* Margem para espaçamento superior e inferior */
+    }
+
+
+    .area_externa {
+        flex-direction: column; /* Empilha as áreas verticalmente */
+        height: auto; /* Permite altura flexível */
+        padding: 10px;
+    }
+
+    .metodo-pagamento,
+    .resumo-compra {
+        width: 80%; 
+        margin-bottom: 15px; 
+        margin-left: 15px;
+    }
+
+    /* Colocando o container resumo-compra primeiro */
+    .resumo-compra {
+        order: -1; /* Garante que o resumo de compra venha antes */
+    }
+
+    .submit-btn, .cancel-btn {
+        width: 100%; /* Botões ocupam toda a largura */
+        margin-top: 15px; /* Espaçamento entre os botões */
+    }
+
+    /* Ajuste para os botões fora do método de pagamento */
+    .area-botoes {
+        display: flex;
+        justify-content: center; /* Centraliza os botões */
+        gap: 10px; 
+        width: 100%; /* Ocupa toda a largura disponível */
+    }
+
+    .area-botoes .btn,
+    .area-botoes .btn-cancelar {
+        width: 45%; /* Ajusta os botões para 45% de largura */
+        font-size: 16px; 
+    }
 }
 
-
-
-/* Ajustes gerais para dispositivos médios */
-@media (max-width: 768px) {
-    .area-centro {
-        flex-direction: column; /* Empilha áreas na vertical */
-        height: auto; /* Altura ajustável */
-        gap: 10px; 
+/* Ajustes para telas muito pequenas, como smartphones */
+@media (max-width: 480px) {
+    .container h1 {
+        text-align: center; /* Centraliza o título horizontalmente */
+        color: #fff; /* Cor do texto */
+        font-size: 20px; /* Ajuste o tamanho da fonte conforme necessário */
+        margin: 20px 0; /* Margem para espaçamento superior e inferior */
+    }
+    .area-formulario h4 {
+        font-size: 14px; /* Reduz o tamanho da fonte */
     }
 
-    .area-esquerda, .area-direita {
-        width: 100%;
-        border-right: none;
+    .imagem-no-input img {
+        width: 35px; /* Reduz o tamanho da imagem */
     }
 
-    .form-group input {
-        width: 90%; /* Ocupa quase toda a largura do container */
+    .valor {
+        width: 80px; /* Ajusta largura do total */
+        margin-left: 10px;
     }
 
-    .img-cartao, .texto {
-        margin-right: 0; /* Remove espaçamento lateral */
+    .ajuda {
+        padding: 15px;
         text-align: center; /* Centraliza o texto */
     }
 
     .area-botoes {
-        flex-direction: column; /* Empilha os botões */
-        justify-content: center;
-        gap: 5px;
+        flex-direction: column; /* Empilha os botões verticalmente */
     }
 
-    .btn, .btn-cancelar {
-        width: 100%; 
+    .submit-btn, .cancel-btn {
+        width: 100%; /* Botões ocupam toda a largura do container */
     }
 }
 
-/* Ajustes específicos para telas muito pequenas, como smartphones */
-@media (max-width: 480px) {
-    .area-centro {
-        gap: 5px; /* Reduz ainda mais o espaço entre as áreas */
-    }
-
-    .form-group input {
-        font-size: 12px; 
-        padding: 8px;
-    }
-
-    .btn, .btn-cancelar {
-        font-size: 12px; /* Tamanho menor para botões */
-        padding: 8px 15px; /* Reduz o espaçamento interno */
-    }
-
-    .principal {
-        padding: 5px; /* Adiciona espaçamento interno menor */
-    }
-}
-
-/*CSS da pagina Pix*/
-
-
-.container-qrcode{
-    text-align: center;
-    border: solid 2px black;
-    background-color: white; 
-  
-}
-
-
-.btn-copiar{
-    background-color: white; 
-    color: rgb(5, 3, 3); 
-    border: none; /* Remove a borda */
-    padding: 10px 20px; /* Espaçamento interno */
-    text-align: center;
-    text-decoration: none;
-    font-size: 14px;
-    cursor: pointer;
-    border-radius: 25px; 
-    margin-top: 20px; 
-    transition: background-color 0.3s ease;
-}
-
-.btn-cancel{
-    background-color: white;
-    border: none;
-    padding: 10px 20px; 
-    text-align: center;
-    text-decoration: none;
-    font-size: 14px;
-    cursor: pointer;
-    border-radius: 25px;
-    margin-top: 20px; 
-    transition: background-color 0.3s ease;
-}
-
-
-.btn-cancel:hover{
-    background-color: #b46557; 
-}
-
-.btn-copiar:hover {
-    background-color: #45a049; 
-}
