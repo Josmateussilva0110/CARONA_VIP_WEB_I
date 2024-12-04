@@ -18,7 +18,7 @@ body {
 }
 
 .container {
-  width: 100%; /* Faz o container ocupar toda a largura */
+  width: 100%; 
   padding: 20px;
   border-radius: 10px;
 }
@@ -34,14 +34,14 @@ header .back-link {
 main h1 {
   text-align: center;
   margin-bottom: 20px;
-  font-family: 'Inclusive Sans', sans-serif; /* Usando a fonte Inclusive Sans */
+  font-family: 'Inclusive Sans', sans-serif; 
 }
 
 .rotas-table {
-  width: 100%; /* Faz a tabela ocupar toda a largura do container */
-  border-collapse: collapse; /* Remove espaços entre as bordas das células */
+  width: 100%;
+  border-collapse: collapse; 
   border: 1px solid #000;
-  font-family: 'Inclusive Sans', sans-serif; /* Usando a fonte Inclusive Sans */
+  font-family: 'Inclusive Sans', sans-serif; 
 }
 
 .table-header {
@@ -58,7 +58,7 @@ main h1 {
   align-items: center;
   border-top: 1px solid #000;
   padding: 10px;
-  font-family: 'Inclusive Sans', sans-serif; /* Usando a fonte Inclusive Sans */
+  font-family: 'Inclusive Sans', sans-serif; 
 }
 
 .buttons button {
@@ -68,7 +68,7 @@ main h1 {
   border-radius: 5px;
   font-size: 14px;
   cursor: pointer;
-  font-family: 'Inclusive Sans', sans-serif; /* Usando a fonte Inclusive Sans */
+  font-family: 'Inclusive Sans', sans-serif; 
 }
 
 .details {
@@ -103,8 +103,8 @@ main h1 {
 }
 
 .rotas-table {
-  width: 100%; /* Garante que a tabela ocupe 100% da largura do container */
-  margin: 0; /* Remove margens */
+  width: 100%; 
+  margin: 0; 
 }
 
 
@@ -113,19 +113,19 @@ main h1 {
   
 @media (max-width: 768px) {
   .table-row {
-    flex-direction: row; /* Mantém as células lado a lado */
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
   }
 
   .table-cell {
-    width: auto; /* Ajusta a largura para caber no layout */
+    width: auto;
     padding: 10px;
     text-align: left;
   }
 
   .buttons {
-    justify-content: flex-end; /* Botões alinhados à direita */
-    gap: 10px; /* Espaçamento entre os botões */
+    justify-content: flex-end;
+    gap: 10px; 
   }
 }
