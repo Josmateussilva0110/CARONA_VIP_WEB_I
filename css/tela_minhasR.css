@@ -99,11 +99,33 @@ main h1 {
   margin-top: 20px;
   margin-bottom: 80px;
   color: #000;
-  font-family: 'Inclusive Sans', sans-serif; /* Usando a fonte Inclusive Sans */
+  font-family: 'Inclusive Sans', sans-serif; 
 }
 
-/* Removi o max-width para permitir que a tabela ocupe toda a largura */
 .rotas-table {
   width: 100%; /* Garante que a tabela ocupe 100% da largura do container */
   margin: 0; /* Remove margens */
+}
+
+
+
+/* Responsivo */
+  
+@media (max-width: 768px) {
+  .table-row {
+    flex-direction: row; /* Mantém as células lado a lado */
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .table-cell {
+    width: auto; /* Ajusta a largura para caber no layout */
+    padding: 10px;
+    text-align: left;
+  }
+
+  .buttons {
+    justify-content: flex-end; /* Botões alinhados à direita */
+    gap: 10px; /* Espaçamento entre os botões */
+  }
 }
