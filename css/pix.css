@@ -46,61 +46,6 @@ body {
 }
 
 
-
-/* Ajustes gerais para dispositivos médios */
-@media (max-width: 768px) {
-    .area-centro {
-        flex-direction: column; /* Empilha áreas na vertical */
-        height: auto; /* Altura ajustável */
-        gap: 10px; 
-    }
-
-    .area-esquerda, .area-direita {
-        width: 100%;
-        border-right: none;
-    }
-
-    .form-group input {
-        width: 90%; /* Ocupa quase toda a largura do container */
-    }
-
-    .img-cartao, .texto {
-        margin-right: 0; /* Remove espaçamento lateral */
-        text-align: center; /* Centraliza o texto */
-    }
-
-    .area-botoes {
-        flex-direction: column; /* Empilha os botões */
-        justify-content: center;
-        gap: 5px;
-    }
-
-    .btn, .btn-cancelar {
-        width: 100%; 
-    }
-}
-
-/* Ajustes específicos para telas muito pequenas, como smartphones */
-@media (max-width: 480px) {
-    .area-centro {
-        gap: 5px; /* Reduz ainda mais o espaço entre as áreas */
-    }
-
-    .form-group input {
-        font-size: 12px; 
-        padding: 8px;
-    }
-
-    .btn, .btn-cancelar {
-        font-size: 12px; /* Tamanho menor para botões */
-        padding: 8px 15px; /* Reduz o espaçamento interno */
-    }
-
-    .principal {
-        padding: 5px; /* Adiciona espaçamento interno menor */
-    }
-}
-
 /*CSS da pagina Pix*/
 
 
@@ -148,4 +93,34 @@ body {
 
 .btn-copiar:hover {
     background-color: #45a049; 
+}
+
+
+/* Ajustes para telas menores */
+@media (max-width: 768px) {
+    .h1-title {
+        text-align: center;
+    }
+    
+
+    .area_externa {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .metodo-pagamento, .resumo-compra {
+        width: 100%; 
+        max-width: 100%;
+    }
+
+    .submit-btn, .cancel-btn {
+        width: 100%;
+    }
+    .btn-cancel:hover{
+        background-color: #b46557; 
+    }
+    
+    .btn-copiar:hover {
+        background-color: #45a049; 
+    }
 }
