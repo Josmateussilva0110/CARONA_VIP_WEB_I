@@ -190,23 +190,33 @@ h3, h6 {
     }
 }
 
-@media (max-width: 480px) {
 
-    .form-container h3, .form-container h6 {
-        font-size: 16px; 
+@media (max-width: 548px) { 
+
+    .form-group input {
+        width: 100%; /* Ocupa toda a largura disponível */
+        max-width: 300px; /* Define um limite máximo */
+        padding: 20px; /* Reduz o espaçamento interno */
+        font-size: 12px; /* Reduz o tamanho da fonte */
+        padding-left: 30px;
+        box-sizing: border-box;
+    }
+
+    .imagem-no-input input {
+        padding-left: 40px; /* Espaço para o ícone */
+        width: 100%; /* Para respeitar o alinhamento */
+        max-width: 300px; /* Largura alinhada */
     }
 
     .imagem-no-input img {
-        left: 7px; 
-    }
-
-    .form-group input {
-        padding-left: 30px; 
-    }
-
-    .texto-superior-esquerdo {
-        left: 5px; 
-        font-size: 10px; 
+        position: relative;
+        left: -131px; /* Posiciona o ícone dentro do padding */
+        top: 50%;
+        padding: 5px;
+        padding-left: 10px;
+        transform: translateY(155%);
+        width: 18px; /* Tamanho consistente do ícone */
+        height: auto; /* Para manter as proporções */
     }
 }
 
