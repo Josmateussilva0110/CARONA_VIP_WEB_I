@@ -116,11 +116,5 @@ body {
     .submit-btn, .cancel-btn {
         width: 100%;
     }
-    .btn-cancel:hover{
-        background-color: #b46557; 
-    }
     
-    .btn-copiar:hover {
-        background-color: #45a049; 
-    }
 }
