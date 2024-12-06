@@ -233,7 +233,7 @@ h3, h6 {
 }
 
 
-@media (max-width: 560px) { 
+@media (max-width: 570px) { 
 
     .form-group input {
         width: 100%; 
@@ -259,6 +259,36 @@ h3, h6 {
         transform: translateY(155%);
         width: 18px; 
         height: auto; 
+    }
+}
+
+/* Samsung */
+@media (max-width: 450px) {
+    .imagem-no-input img {
+        margin-left: 75px;
+    }
+
+    .texto-superior-direito {
+        padding: 0;
+    }
+
+    .texto-superior-esquerdo {
+        padding-top: 10px;
+    }
+}
+
+/* iphone 12*/
+@media (max-width: 400px) {
+    .imagem-no-input img {
+        display: none;
+    }
+
+    .texto-superior-direito {
+        padding: 0;
+    }
+
+    .texto-superior-esquerdo {
+        padding-top: 10px;
     }
 }
 
