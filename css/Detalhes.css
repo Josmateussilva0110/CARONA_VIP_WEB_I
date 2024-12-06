@@ -238,6 +238,26 @@
     margin-bottom: 3px;
   }
 
+  .texto-superior-esquerdo {
+    position: absolute; 
+    top: 10px; 
+    left: 30px; 
+    font-size: 16px; 
+    color: var(--preto); 
+    padding: 5px 10px;
+    display: flex; 
+    align-items: center; 
+  }
+
+  .texto-superior-esquerdo a {
+      color: white;
+      text-decoration: none;
+  }
+
+  .texto-superior-esquerdo img {
+      margin-right: 8px; /* Espaço entre a imagem e o texto */
+  }
+
   /* Responsividade */
   @media (max-width: 768px) {
     .container {

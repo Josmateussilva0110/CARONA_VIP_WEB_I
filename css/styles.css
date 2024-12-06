@@ -6,6 +6,10 @@
     --verde_escuro: #004753;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     font-family: 'Zen Kaku Gothic Antique', sans-serif;
@@ -586,6 +590,8 @@ h3, h6 {
 
 .seguir-rotas a {
     font-size: 12px;
+    text-decoration: none;
+    color: var(--_fundo_branco);
 }
 
 .seguir-rotas:hover {
