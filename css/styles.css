@@ -964,3 +964,53 @@ h3, h6 {
     right: -50px;
     transform: translateY(-285%);
 }
+
+@media (max-width: 768px) {
+    .sessao-06 {
+        padding: 80px 20px;
+    }
+
+    .content-sessao-06 {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .sessao-06-esquerda,
+    .sessao-06-direita {
+        max-width: 100%;
+        text-align: center; 
+    }
+
+    .sessao-06-esquerda img {
+        margin-bottom: 20px;
+        margin-left: 40%;
+    }
+
+    .sessao-06-direita p {
+        text-align: center; 
+    }
+
+    #contato-sessao-06,
+    #ajuda-sessao-06,
+    #faq-sessao-06,
+    #help-sessao-06 {
+        position: relative;
+        right: auto;
+        transform: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .sessao-06 {
+        padding: 50px 10px; 
+    }
+
+    .sessao-06-esquerda img {
+        width: 120px;
+
+    }
+
+    .sessao-06-direita a {
+        font-size: 12px; 
+    }
+}
