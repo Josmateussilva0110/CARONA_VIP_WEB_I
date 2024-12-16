@@ -32,10 +32,11 @@ h3, h6 {
 
 .esquerda img {
     display: block;
-    padding-left: 5;
-    width: 415px; 
-    height: 729px; 
+    padding-left: 0.3125rem; 
+    width: 25.9375rem; 
+    height: 45.5625rem; 
 }
+
 
 .direita {
     width: 73%;
@@ -48,32 +49,32 @@ h3, h6 {
 
 .form-container {
     background-color: var(--_fundo_branco);
-    padding: 50px;
-    width: 400px; 
+    padding: 3.125rem;
+    width: 25rem; 
     text-align: center;
     margin: 0 auto; /* Centraliza o formulário no eixo horizontal */
 }
 
 .form-container h3 {
     text-align: center;
-    margin-bottom: 10px; /* Espaçamento menor para ficar alinhado */
+    margin-bottom: 0.625rem; /* Espaçamento menor para ficar alinhado */
 }
 
 .form-container h6 {
     text-align: center;
     color: var(--cinza);
-    margin-bottom: 20px; /* Espaçamento antes do formulário */
+    margin-bottom: 1.25rem; /* Espaçamento antes do formulário */
 }
 
 .form-group {
-    margin-bottom: 15px;
+    margin-bottom: 0.9375rem;
     text-align: center; 
 }
 
 .form-group input {
     width: 100%; 
-    max-width: 350px; /* Define um limite para os inputs */
-    padding: 18px;
+    max-width: 21.875rem; /* Define um limite para os inputs */
+    padding: 1.125rem;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
@@ -82,12 +83,12 @@ h3, h6 {
 .submit-btn {
     background-color: var(--preto);
     color: var(--_fundo_branco);
-    padding: 16px;
+    padding: 1rem;
     border: none;
     border-radius: 4px;
     width: 88%;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 .submit-btn:hover {
@@ -133,11 +134,11 @@ h3, h6 {
 
 .texto-superior-direito {
     position: absolute; 
-    top: 10px; 
-    right: 12px; 
-    font-size: 12px; 
+    top: 0.625rem; 
+    right: 0.75rem; 
+    font-size: 0.75rem; 
     color: var(--preto); 
-    padding: 5px 10px;
+    padding: 0.3125rem 0.625rem;
     display: flex; 
     align-items: center; 
 }
@@ -153,11 +154,11 @@ h3, h6 {
 
 .texto-superior-esquerdo {
     position: absolute; 
-    top: 10px; 
-    left: 410px; 
-    font-size: 12px; 
+    top: 0.625rem; 
+    left: 25.625rem; 
+    font-size: 0.75rem; 
     color: var(--preto); 
-    padding: 5px 10px;
+    padding: 0.3125rem 0.625rem;
     display: flex; 
     align-items: center; 
 }
@@ -180,7 +181,7 @@ h3, h6 {
 
     .direita {
         width: 100%; 
-        padding: 50px; 
+        padding: 3.125rem; 
     }
 
     .form-container {
@@ -190,14 +191,14 @@ h3, h6 {
 
 
     .imagem-no-input input {
-        padding-left: 40px; 
+        padding-left: 2.5rem; 
         width: 100%; 
-        max-width: 300px; 
+        max-width: 18.75rem; 
     }
 
     .imagem-no-input img {
         position: relative;
-        left: 28px; 
+        left: 1.75rem; 
         top: 50%;
         transform: translateY(20%);
         width: 18px; 
@@ -206,29 +207,29 @@ h3, h6 {
 
     .form-group input {
         width: 100%; 
-        max-width: 300px; 
-        padding: 20px; 
-        font-size: 12px; 
-        padding-left: 30px;
+        max-width: 18.75rem; 
+        padding: 1.25rem; 
+        font-size: 0.75rem; 
+        padding-left: 1.875rem;
         box-sizing: border-box;
     }
 
     .imagem-no-input button {
         width: 100%; 
-        max-width: 300px; 
-        font-size: 12px; 
+        max-width: 18.75rem; 
+        font-size: 0.75rem; 
     }
 
     .texto-superior-esquerdo {
-        left: 10px; 
-        top: 10px; 
+        left: 0.625rem; 
+        top: 0.625rem; 
         margin: 0;
         padding: 0;
         width: auto; 
     }
 
     .texto-superior-esquerdo a {
-        font-size: 12px; 
+        font-size: 0.75rem; 
     }
 }
 
@@ -237,27 +238,27 @@ h3, h6 {
 
     .form-group input {
         width: 100%; 
-        max-width: 300px; 
-        padding: 20px; 
-        font-size: 12px; 
-        padding-left: 30px;
+        max-width: 18.75rem;
+        padding: 1.25rem;
+        font-size: 0.75rem; 
+        padding-left: 1.875rem;
         box-sizing: border-box;
     }
 
     .imagem-no-input input {
-        padding-left: 40px; 
+        padding-left: 2.5rem; 
         width: 100%; 
-        max-width: 300px; 
+        max-width: 18.75rem; 
     }
 
     .imagem-no-input img {
         position: relative;
-        left: -131px; /* Posiciona o ícone dentro do padding */
+        left: -8.1875rem; /* Posiciona o ícone dentro do padding */
         top: 50%;
-        padding: 5px;
-        padding-left: 10px;
+        padding: 0.3125rem;
+        padding-left: 0.625rem;
         transform: translateY(155%);
-        width: 18px; 
+        width: 1.125rem; 
         height: auto; 
     }
 }
@@ -265,7 +266,7 @@ h3, h6 {
 /* Samsung */
 @media (max-width: 450px) {
     .imagem-no-input img {
-        margin-left: 75px;
+        margin-left: 4.6875rem;
     }
 
     .texto-superior-direito {
@@ -273,7 +274,7 @@ h3, h6 {
     }
 
     .texto-superior-esquerdo {
-        padding-top: 10px;
+        padding-top: 0.625rem;
     }
 }
 
@@ -288,13 +289,13 @@ h3, h6 {
     }
 
     .texto-superior-esquerdo {
-        padding-top: 10px;
+        padding-top: 0.625rem;
     }
 }
 
 
 .menu-espaco {
-    height: 40px;
+    height: 2.5rem;
 }
 
 .fundo-container {
@@ -307,7 +308,7 @@ h3, h6 {
 
 .sessao-01 {
     position: relative;
-    padding: 270px;
+    padding: 16.875rem;
     color: var(--preto);
     z-index: 1;
 }
@@ -325,28 +326,28 @@ h3, h6 {
 
 
 .sessao-02 {
-    padding: 270px;
+    padding: 16.875rem;
     background-color: var(--_fundo_branco);
 }
 
 
 .sessao-03 {
-    padding: 150px;
+    padding: 9.375rem;
     background-color: var(--_fundo_branco);
 }
 
 .sessao-04 {
-    padding: 110px;
+    padding: 6.875rem;
     background-color: var(--_fundo_branco);
 }
 
 .sessao-05 {
-    padding: 170px;
+    padding: 10.625rem;
     background-color: var(--verde_escuro);
 }
 
 .sessao-06 {
-    padding: 170px;
+    padding: 10.625rem;
     background-color: var(--_fundo_branco);
 }
 
@@ -385,37 +386,37 @@ h3, h6 {
 
 .content-sessao-02 p {
     font-family: 'Times New Roman', sans-serif;
-    font-size: 30px;
-    margin: -200px auto 0 auto;
+    font-size: 1.875rem;
+    margin: -12.5rem auto 0 auto;
 }
 
 .content-sessao-03 p {
     font-family: 'Times New Roman', sans-serif;
-    font-size: 30px;
-    margin: -110px auto 0 auto;
+    font-size: 1.875rem;
+    margin: -6.875rem auto 0 auto;
 }
 
 .imagem-seguranca {
     position: absolute;
-    top: 75px; /* Ajuste para descer a imagem */
-    left: 90px; /* Ajuste para movê-la para a direita */
+    top: 4.6875rem; /* Ajuste para descer a imagem */
+    left: 5.625rem; /* Ajuste para movê-la para a direita */
 }
 
 .imagem-seguranca img {
-    width: 370px;
+    width: 23.125rem;
     height: auto;
-    padding-top: 60px;
-    left: -280px;
+    padding-top: 3.75rem;
+    left: -17.5rem;
     transform: translateY(-5%);
 }
 
 .texto-sessao-02 {
     position: absolute;
-    top: 150px; 
-    left: 500px; 
-    width: 400px;
+    top: 9.375rem; 
+    left: 31.25rem; 
+    width: 25rem;
     text-align: left; 
-    font-size: 12px;
+    font-size: 0.75rem;
 }
 
 .texto-sessao-02 h4 {
