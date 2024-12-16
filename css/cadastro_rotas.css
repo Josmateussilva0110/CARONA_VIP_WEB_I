@@ -9,36 +9,39 @@ body {
     margin: 0;
     padding: 0;
     background: url('../imagens/cadastro_rotas/fundo_cadastro_rotas.png') no-repeat center center;
-    background-size: cover; /* Faz a imagem preencher a tela */
+    background-size: cover;
     font-family: 'Zen Kaku Gothic Antique', sans-serif;
     height: 100vh; /* Altura total da tela */
-    display: flex; /* Flexbox para centralizar o conteúdo */
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Para permitir centralização flexível */
 }
 
 
 /* Container principal */
 .container {
     display: flex;
-    justify-content: center; /* Centraliza o formulário */
-    align-items: center; /* Centraliza verticalmente */
-    height: 100%; /* Ocupa 100% da altura da tela */
-    width: 100%; /* Ocupa 100% da largura */
-    backdrop-filter: blur(5px); /* Adiciona leve desfoque no fundo */
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(5px);
+    flex-direction: column; /* Adiciona flexibilidade na direção */
+
 }
 
-
 .form-container {
-    padding: 50px;
-    width: 400px; 
+    padding: 20px;
+    width: 100%;
+    max-width: 400px; /* Limita a largura do formulário */
     text-align: center;
-    margin: 0 auto; /* Centraliza o formulário no eixo horizontal */
+    border-radius: 8px;
 }
 
 .form-container h3 {
     text-align: center;
-    margin-bottom: 10px; /* Espaçamento menor para ficar alinhado */
+    margin-bottom: 15   px; /* Espaçamento menor para ficar alinhado */
     font-family: 'Zen Kaku Gothic Antique', sans-serif;
 }
 
@@ -58,8 +61,7 @@ body {
 
 .form-group input {
     width: 100%; 
-    max-width: 350px; /* Define um limite para os inputs */
-    padding: 22px;
+    padding: 20px;
     border: 1px solid var(--preto);
     border-radius: 4px;
     box-sizing: border-box;
@@ -183,50 +185,5 @@ body {
     height: auto;
 }
 
-/* Responsividade */
 
-@media (max-width: 768px) {
-    .form-container {
-        width: 95%; /* Aumenta a largura em telas menores */
-        padding: 20px; /* Reduz o padding interno */
-    }
 
-    .form-group input {
-        font-size: 14px; /* Reduz o tamanho do texto */
-        padding: 12px; /* Reduz o padding dos inputs */
-    }
-
-    .submit-btn {
-        padding: 10px; /* Ajusta o tamanho do botão */
-        font-size: 14px; /* Reduz o tamanho da fonte */
-    }
-}
-
-@media (max-width: 480px) {
-    body {
-        background-position: center top; /* Ajusta o posicionamento do fundo */
-    }
-
-    .form-container {
-        width: 90%; /* Ajusta para caber melhor em telas pequenas */
-        padding: 15px; /* Reduz o padding interno */
-    }
-
-    .form-group input {
-        padding: 10px;
-        font-size: 12px; /* Texto menor */
-    }
-
-    .submit-btn {
-        padding: 8px;
-        font-size: 12px;
-    }
-    .imagem-no-input input {
-        padding: 12px 30px 12px 30px; /* Ajuste no padding */
-    }
-
-    .imagem-no-input img {
-        left:28px; /* Ajuste no posicionamento da imagem */
-        width: 16px; /* Reduz ainda mais o tamanho da imagem */
-    }
-}

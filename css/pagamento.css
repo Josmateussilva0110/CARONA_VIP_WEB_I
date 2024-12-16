@@ -168,8 +168,6 @@ body {
 .ajuda{
    padding: 30px;
    text-align: right;
-
- 
 }
 .ajuda a{
     color: #fff;
@@ -377,7 +375,8 @@ body {
 
     .ajuda {
         padding: 15px;
-        text-align: center; /* Centraliza o texto */
+        text-align: right; /* Centraliza o texto */
+
     }
 
     .area-botoes {
