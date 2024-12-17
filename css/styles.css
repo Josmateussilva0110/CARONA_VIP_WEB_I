@@ -474,11 +474,18 @@ h3, h6 {
     align-items: center;
     padding: 1.5625rem 1.25rem;
     background: transparent;
+    margin-top: -1rem;
 }
 
 .logo {
-    font-size: 20px;
+    font-size: 10px;
     font-weight: bold;
+}
+
+.logo img {
+    margin-top: 0.5rem;
+    width: 14rem;
+    height: auto;
 }
 
 .menu-links {
