@@ -417,6 +417,7 @@ h3, h6 {
     width: 25rem;
     text-align: left; 
     font-size: 0.75rem;
+
 }
 
 .texto-sessao-02 h4 {
@@ -805,7 +806,7 @@ h3, h6 {
 
 .texto-esquerdo-sessao-04 {
     font-family: 'Inter', sans-serif;
-    color: #054652;
+    color: #000;
     max-width: 390px; 
     max-height: 120px;
     text-align: left;
