@@ -69,9 +69,38 @@
                 </div>
             </div>
         </div>
-        <div class="ajuda">
-            <a href="#">Precisa de ajuda?</a>
+        <div class="texto-inferior-direito">
+            <a href="#" id="contact-link">precisa de ajuda ?</a>
+        </div>
+
+        <div id="contact-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>Email de contato: <a href="mailto:contato@plataforma.com">contato@plataforma.com</a></p>
+            </div>
         </div>
     </div>
 </body>
 </html>
+
+<script>
+    const modal = document.getElementById("contact-modal");
+    const contactLink = document.getElementById("contact-link");
+    const closeBtn = document.querySelector(".close");
+
+    contactLink.addEventListener("click", (e) => {
+        e.preventDefault(); 
+        modal.style.display = "block";
+    });
+
+    closeBtn.addEventListener("click", () => {
+        modal.style.display = "none";
+    });
+
+    window.addEventListener("click", (e) => {
+        if (e.target === modal) {
+            modal.style.display = "none";
+        }
+    });
+
+</script>

@@ -132,6 +132,11 @@ h3, h6 {
     margin-right: 8px; /* Espaço entre a imagem e o texto */
 }
 
+.texto-inferior-direito a {
+    color: var(--preto);
+    text-decoration: none;
+}
+
 .texto-superior-direito {
     position: absolute; 
     top: 0.625rem; 
@@ -551,7 +556,7 @@ h3, h6 {
     padding: 0.9375rem;
     border: none;
     outline: none;
-    font-size: 16px;
+    font-size: 1rem;
     border-radius: 20px 20px;
     box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.3);
 }
@@ -582,27 +587,27 @@ h3, h6 {
 
 .imagem-sessao-01 {
     position: absolute; 
-    right: 80px; 
-    padding-right: 80px;
+    right: 5rem; 
+    padding-right: 5rem;
     top: 60%; 
     transform: translateY(-50%); 
 }
 
 .imagem-sessao-01 img {
-    width: 420px;
+    width: 26.25rem;
     height: auto;
 }
 
 .texto-esquerda-sessao-01 {
     position: absolute;
-    padding-left: 115px;
-    left:30px;
+    padding-left: 7.1875rem;
+    left: 1.875rem;
     top: 60%;
     transform: translateY(-50%); 
 }
 
 .texto-esquerda-sessao-01 img {
-    width: 400px;
+    width: 25rem;
     height: auto;
 }
 
@@ -610,9 +615,9 @@ h3, h6 {
     background-color: var(--preto);
     color: var(--_fundo_branco);
     border: none;
-    padding: 12px;
-    width: 180px;
-    margin-left: 37px;
+    padding: 0.75rem;
+    width: 11.25rem;
+    margin-left: 2.3125rem;
     border-radius: 25px 25px;
     cursor: pointer;
     display: flex;
@@ -622,13 +627,13 @@ h3, h6 {
 }
 
 .seguir-rotas img {
-    width: 20px;
-    height: 20px;
-    margin: 7px;
+    width: 1.25rem;
+    height: 1.25rem;
+    margin: 0.4375rem;
 }
 
 .seguir-rotas a {
-    font-size: 12px;
+    font-size: 0.75rem;
     text-decoration: none;
     color: var(--_fundo_branco);
 }
@@ -641,15 +646,15 @@ h3, h6 {
 
 .search-container {
     position: relative;
-    width: 350px; /* Largura do campo de pesquisa */
-    margin-left: -120px;
+    width: 21.875rem; /* Largura do campo de pesquisa */
+    margin-left: -7.5rem;
 }
 
 .search-container input[type="text"] {
     width: 100%;
-    height: 55px;
-    padding: 0 120px 0 15px; /* Espaço extra para o botão no lado direito */
-    font-size: 16px;
+    height: 3.4375rem;
+    padding: 0 7.5rem 0 0.9375rem; /* Espaço extra para o botão no lado direito */
+    font-size: 1rem;
     border: none;
     border-radius: 25px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
@@ -658,16 +663,16 @@ h3, h6 {
 
 .search-container button {
     position: absolute;
-    left: 372px; /* Posiciona o botão dentro do campo de pesquisa */
+    left: 23.25rem; /* Posiciona o botão dentro do campo de pesquisa */
     top: 50%;
     transform: translateY(-60%);
-    height: 35px;
-    padding: 0 20px;
+    height: 1.5625rem;
+    padding: 1rem;
     border: none;
-    border-radius: 20px;
+    border-radius: 0.75rem;
     background-color: #000; /* Cor do botão */
     color: #fff;
-    font-size: 12px;
+    font-size: 0.75rem;
     font-weight: bold;
     cursor: pointer;
     display: flex;
@@ -680,45 +685,45 @@ h3, h6 {
 .container_sessao-03 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 60px;
-    padding: 40px;
+    gap: 3.75rem;
+    padding: 2.5rem;
     background-color: var(--_fundo_branco);
 }
 
 
 .card {
     background-color: #fff;
-    border-radius: 17px;
+    border-radius: 1.0625rem;
     box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    width: 270px;
-    height: 300px;
+    padding: 1.25rem;
+    width: 16.875rem;
+    height: 18.75rem;
     text-align: center;
 }
 
 .card h2 {
-    font-size: 18px;
+    font-size: 1.125rem;
     color: var(--preto);
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
 }
 
 .card p {
-    font-size: 14px;
+    font-size: 0.875rem;
     color: var(--preto);
-    margin: 5px 0;
-    padding-top: 10px;
+    margin: 0.3125rem 0;
+    padding-top: 0.625rem;
 }
 
 .origem {
     display: flex;
     flex-direction: column; /* Organiza os subgrupos verticalmente */
     align-items: flex-start; /* Alinha à esquerda */
-    gap: 18px; /* Espaço entre as seções */
-    padding-top: 20px;
+    gap: 1.125rem; /* Espaço entre as seções */
+    padding-top: 1.25rem;
 }
 
 .origem p {
-    font-size: 18px;
+    font-size: 1.125rem;
 }
 
 .destino {
@@ -727,39 +732,39 @@ h3, h6 {
 }
 
 .destino p {
-    padding-left: 30px;
+    padding-left: 1.875rem;
 }
 
 .imagem-localizacao-destino {
     position: relative;
-    padding-left: 20px; 
+    padding-left: 1.25rem; 
     width: 100%;
-    max-width: 350px;
+    max-width: 21.875rem;
 }
 
 
 .imagem-localizacao-destino img {
     position: absolute;
-    left: 10px;
+    left: 0.625rem;
     top: -10%;
-    padding-top: 16px;
+    padding-top: 1rem;
     transform: translateY(-1%);
-    width: 15px; /* Tamanho consistente do ícone */
+    width: 0.9375rem; /* Tamanho consistente do ícone */
     height: auto; /* Para manter as proporções */
 }
 
 
 .valor-viagem {
     transform: translateY(-50%); 
-    margin-left: 160px;
+    margin-left: 10rem;
 }
 
 .valor-viagem button {
     background-color: #7209b7;
-    padding: 10px;
+    padding: 0.625rem;
     color: var(--_fundo_branco);
-    border-radius: 18px;
-    width: 115px;
+    border-radius: 1.125rem;
+    width: 7.1875rem;
     height: auto;
     border: none;
 }
@@ -767,17 +772,17 @@ h3, h6 {
 
 
 .botao-detalhes {
-    padding-top: 55px;
+    padding-top: 3.4375rem;
     text-align: center;
 }
 
 .botao-detalhes a {
     display: inline-block;
     background-color: #ff7300;
-    padding: 12px 30px; 
-    font-size: 16px; 
+    padding: 0.75rem 1.875rem; 
+    font-size: 1rem; 
     color: var(--_fundo_branco);
-    border-radius: 18px;
+    border-radius: 1.125rem;
     border: none;
     text-decoration: none;
     width: auto;
@@ -791,14 +796,14 @@ h3, h6 {
 
 .imagem-sessao-04 {
     position: absolute; 
-    right: 120px;
+    right: 7.5rem;
     display: flex; 
     text-align: center;
     transform: translateY(-80%);
 }
 
 .imagem-sessao-04 img {
-    width: 380px;
+    width: 23.75rem;
     height: auto;
 }
 
@@ -807,8 +812,8 @@ h3, h6 {
 .texto-esquerdo-sessao-04 {
     font-family: 'Inter', sans-serif;
     color: #000;
-    max-width: 390px; 
-    max-height: 120px;
+    max-width: 24.375rem; 
+    max-height: 7.5rem;
     text-align: left;
     word-wrap: break-word; 
     line-height: 1.3;
@@ -816,18 +821,18 @@ h3, h6 {
 
 .texto-esquerdo-sessao-04 h2 {
     position: absolute;
-    left: 240px;
-    padding: 20px;
+    left: 15rem;
+    padding: 1.25rem;
     transform: translateY(-280%);
     word-wrap: break-word;
 }
 
 .texto-esquerdo-sessao-04 p {
     position: absolute;
-    max-width: 390px; 
-    max-height: 120px;
-    left: 242px;
-    padding: 20px;
+    max-width: 24.375rem; 
+    max-height: 7.5rem;
+    left: 15.125rem;
+    padding: 1.25rem;
     transform: translateY(-120%);
     word-wrap: break-word;
 }
@@ -836,11 +841,11 @@ h3, h6 {
     position: absolute;
     background-color: #054652;
     border: none;
-    left: 260px;
-    padding: 12px;
-    font-size: 12px;
-    width: 95px;
-    margin-left: 110px;
+    left: 16.25rem;
+    padding: 0.75rem;
+    font-size: 0.75rem;
+    width: 5.625rem;
+    margin-left: 6.875rem;
     border-radius: 25px 25px;
     cursor: pointer;
     display: flex;
@@ -863,8 +868,8 @@ h3, h6 {
 .texto-sessao-05 {
     font-family: 'Inter', sans-serif;
     color: var(--_fundo_branco);
-    max-width: 400px; 
-    max-height: 120px;
+    max-width: 25rem; 
+    max-height: 7.5rem;
     text-align: left;
     word-wrap: break-word; 
     line-height: 1.3;
@@ -872,18 +877,18 @@ h3, h6 {
 
 .texto-sessao-05 h2 {
     position: absolute;
-    left: 350px;
-    padding: 20px;
+    left: 21.875rem;
+    padding: 1.25rem;
     transform: translateY(-200%);
     word-wrap: break-word;
 }
 
 .texto-sessao-05 p {
     position: absolute;
-    max-width: 525px; 
-    max-height: 130px;
-    left: 350px;
-    padding: 20px;
+    max-width: 32.8125rem; 
+    max-height: 8.125rem;
+    left: 21.875rem;
+    padding: 1.25rem;
     transform: translateY(-75%);
     word-wrap: break-word;
 }
@@ -893,11 +898,11 @@ h3, h6 {
     position: absolute;
     background-color: var(--_fundo_branco);
     border: none;
-    left: 235px;
-    padding: 12px;
-    font-size: 12px;
-    width: 95px;
-    margin-left: 295px;
+    left: 14.6875rem;
+    padding: 0.75rem;
+    font-size: 0.75rem;
+    width: 5.9375rem;
+    margin-left: 18.4375rem;
     border-radius: 25px 25px;
     cursor: pointer;
     display: flex;
@@ -920,24 +925,24 @@ h3, h6 {
 
 .sessao-06-esquerda,
 .sessao-06-direita {
-    max-width: 525px; 
-    max-height: 130px;
+    max-width: 32.8125rem; 
+    max-height: 8.125rem;
 }
 
 .sessao-06-esquerda p,
 .sessao-06-direita p {
     margin: 0;
-    padding: 20px;
+    padding: 1.25rem;
     word-wrap: break-word;
-    font-size: 15px;
+    font-size: 0.9375rem;
     transform: translateY(-140%);
 }
 
 .sessao-06-esquerda img {
     position: absolute;
-    width: 150px;
+    width: 9.375rem;
     height: auto;
-    left: -30px;
+    left: -1.875rem;
     transform: translateY(-200%);
 }
 
@@ -947,36 +952,36 @@ h3, h6 {
 
 #contato-sessao-06 {
     position: absolute;
-    right: 130px;
+    right: 7.5rem;
     transform: translateY(-180%);
 }
 
 #ajuda-sessao-06 {
     position: absolute;
-    right: -50px;
+    right: -3.125rem;
     transform: translateY(-180%);
 }
 
 .sessao-06-direita a {
-    font-size: 13px;
+    font-size: 0.8125rem;
     cursor: pointer;
 }
 
 #faq-sessao-06 {
     position: absolute;
-    right: 150px;
+    right: 9.375rem;
     transform: translateY(-285%);
 }
 
 #help-sessao-06 {
     position: absolute;
-    right: -50px;
+    right: -3.125rem;
     transform: translateY(-285%);
 }
 
 @media (max-width: 768px) {
     .sessao-06 {
-        padding: 80px 20px;
+        padding: 5rem 1.25rem;
     }
 
     .content-sessao-06 {
@@ -991,7 +996,7 @@ h3, h6 {
     }
 
     .sessao-06-esquerda img {
-        margin-bottom: 20px;
+        margin-bottom: 1.25rem;
         margin-left: 40%;
     }
 
@@ -1011,16 +1016,16 @@ h3, h6 {
 
 @media (max-width: 480px) {
     .sessao-06 {
-        padding: 50px 10px; 
+        padding: 3.125rem 0.625rem; 
     }
 
     .sessao-06-esquerda img {
-        width: 120px;
+        width: 7.5rem;
 
     }
 
     .sessao-06-direita a {
-        font-size: 12px; 
+        font-size: 0.75rem; 
     }
 }
 
