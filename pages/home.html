@@ -16,7 +16,7 @@
                 </div>
                 <ul class="menu-links">
                     <li><a href="#">INÍCIO</a></li>
-                    <li><a href="#" id="contact-link">CONTATO</a></li>
+                    <li><a href="#" class="open-modal">CONTATO</a></li>
                     <li><a href="../pages/login.html">ENTRAR</a></li>
                     <li><a id="cadastrar_menu"  href="../pages/cadastro_usuario.html" class="btn-cadastrar">CADASTRAR</a></li>
                 </ul>
@@ -314,11 +314,11 @@
             <div class="coontent-sessao-06">
                 <div class="coluna">
                     <p class="titulo">CONTATO</p>
-                    <a href="#">Ajuda - FAQ</a>
+                    <a href="#" class="open-modal">Ajuda - FAQ</a> 
                 </div>
                 <div class="coluna">
                     <p class="titulo">AJUDA</p>
-                    <a href="#">Help Center</a>
+                    <a href="./helpcenter.html">Help Center</a>
                 </div>
             </div>
         </div>
@@ -330,12 +330,14 @@
 
 <script>
     const modal = document.getElementById("contact-modal");
-    const contactLink = document.getElementById("contact-link");
-    const closeBtn = document.querySelector(".close");
+    const openModalLinks = document.querySelectorAll(".open-modal");
 
-    contactLink.addEventListener("click", (e) => {
-        e.preventDefault(); 
-        modal.style.display = "block";
+    const closeBtn = document.querySelector(".close");
+    openModalLinks.forEach(link => {
+        link.addEventListener("click", (e) => {
+            e.preventDefault();
+            modal.style.display = "block";
+        });
     });
 
     closeBtn.addEventListener("click", () => {
@@ -347,5 +349,6 @@
             modal.style.display = "none";
         }
     });
+
 
 </script>
