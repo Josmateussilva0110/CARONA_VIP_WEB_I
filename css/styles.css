@@ -921,44 +921,7 @@ h3, h6 {
     color: var(--_fundo_branco);
 }
 
-/* Estilos Responsivos */
-@media (max-width: 768px) {
-    .sessao-05 {
-        padding: 4rem 1.5rem;
-    }
 
-    .texto-sessao-05 h2 {
-        font-size: 1.5rem;
-    }
-
-    .texto-sessao-05 p {
-        font-size: 0.9rem;
-    }
-
-    .saiba-mais-botao-sessao-05 {
-        font-size: 0.875rem;
-        padding: 0.5rem 1rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .texto-sessao-05 {
-        text-align: center;
-    }
-
-    .texto-sessao-05 h2 {
-        font-size: 1.2rem;
-    }
-
-    .texto-sessao-05 p {
-        font-size: 0.85rem;
-    }
-
-    .saiba-mais-botao-sessao-05 {
-        font-size: 0.75rem;
-        padding: 0.5rem 0.75rem;
-    }
-}
 
 .sessao-06-esquerda {
     flex: 1;
@@ -1005,44 +968,6 @@ h3, h6 {
 }
 
 
-@media (max-width: 1024px) {
-    .sessao-06-esquerda {
-        margin-left: -2rem; 
-    }
-}
-
-
-@media (max-width: 768px) {
-    .sessao-06-esquerda {
-        margin-left: 0; 
-        text-align: center; 
-    }
-
-    .content-sessao-06 {
-        flex-direction: column;
-        align-items: center; 
-        gap: 2rem;
-    }
-
-    .sessao-06-esquerda img {
-        max-width: 70%; 
-    }
-
-    .coluna {
-        align-items: center; 
-    }
-}
-
-@media (max-width: 480px) {
-    .sessao-06 {
-        padding: 3rem 1rem;
-    }
-
-    .sessao-06-esquerda img {
-        max-width: 60%; 
-    }
-}
-
 /* Estilização do Modal */
 .modal {
     display: none; /* Esconde o modal por padrão */
@@ -1078,4 +1003,13 @@ h3, h6 {
     color: black;
     text-decoration: none;
     cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+    .sessao-04 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2.5rem 1.5rem;
+    }
 }
