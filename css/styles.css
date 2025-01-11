@@ -695,10 +695,12 @@ h3, h6 {
 
 
 .container_sessao-03 {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 3.75rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 3rem; /* Espaçamento entre os cards */
     padding: 2.5rem;
+    max-width: 90%;
     background-color: var(--_fundo_branco);
 }
 
@@ -708,9 +710,15 @@ h3, h6 {
     border-radius: 1.0625rem;
     box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
     padding: 1.25rem;
-    width: 16.875rem;
-    height: 18.75rem;
+    width: 240px;
+    height: auto;
     text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-11px); 
+    box-shadow: 0 16px 25px rgba(0, 0, 0, 0.2); 
 }
 
 .card h2 {
@@ -730,7 +738,7 @@ h3, h6 {
     display: flex;
     flex-direction: column; /* Organiza os subgrupos verticalmente */
     align-items: flex-start; /* Alinha à esquerda */
-    gap: 1.125rem; /* Espaço entre as seções */
+    gap: 1.125rem; 
     padding-top: 1.25rem;
 }
 
@@ -761,8 +769,9 @@ h3, h6 {
     top: -10%;
     padding-top: 1rem;
     transform: translateY(-1%);
-    width: 0.9375rem; /* Tamanho consistente do ícone */
-    height: auto; /* Para manter as proporções */
+    width: 0.9375rem; 
+    height: auto; 
+    max-width: 100%;
 }
 
 
@@ -774,9 +783,10 @@ h3, h6 {
 .valor-viagem button {
     background-color: #7209b7;
     padding: 0.625rem;
+    font-size: 0.8rem;
     color: var(--_fundo_branco);
     border-radius: 1.125rem;
-    width: 7.1875rem;
+    width: 80%;
     height: auto;
     border: none;
 }
@@ -804,6 +814,7 @@ h3, h6 {
 .botao-detalhes a:hover {
     background-color: #ff5700;
 }
+
 
 
 .imagem-sessao-04 {
