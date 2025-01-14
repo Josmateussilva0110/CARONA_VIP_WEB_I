@@ -768,6 +768,38 @@ h3, h6 {
 
 /* Responsividade para a Sessão 04 */
 
+@media (max-width: 1420px) {
+    .content-sessao-04 {
+        margin-top: -10rem;
+    }
+    .sessao-04 {
+        padding: 5rem 2rem; /* Reduz o padding geral */
+    }
+    .imagem-sessao-04 {
+        display: none; 
+    }
+
+    .texto-esquerdo-sessao-04 h2, .texto-esquerdo-sessao-04 p {
+        position: static; /* Remove o posicionamento absoluto */
+        transform: none; /* Remove a transformação */
+        text-align: center; /* Centraliza o texto */
+        padding: 1rem 0;
+    }
+
+    .texto-esquerdo-sessao-04 {
+        max-width: 100; /* Ajusta a largura do texto */
+        margin: 0 auto; /* Centraliza o conteúdo */
+    }
+
+    .oferecer-carona-botao-sessao-04 {
+        position: static; /* Remove o posicionamento absoluto */
+        margin: 1rem auto; /* Centraliza o botão */
+        transform: none; /* Remove a transformação */
+        margin-top: 80px;
+    }
+}
+
+
 /* Tela média (até 1024px) */
 @media (max-width: 1024px) {
     .sessao-04 {
@@ -992,28 +1024,35 @@ h3, h6 {
     background-color: var(--_fundo_branco);
 }
 
-/* Container central da seção 06 */
 .content-sessao-06 {
     display: flex;
     justify-content: center;
-    align-items: flex-start;
-    gap: 4rem;
+    align-items: flex-start; 
+    gap: 4rem; 
     max-width: 1200px;
     margin: 0 auto;
 }
 
-/* Estilo para a área esquerda da seção 06 */
+.coontent-sessao-06 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; 
+    gap: 4rem; 
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
 .sessao-06-esquerda {
     flex: 1;
     text-align: center;
-    margin-left: -35rem;
+    margin-left: -35rem; 
 }
 
-/* Texto e imagem na área esquerda */
 .sessao-06-esquerda p {
     font-size: 1rem;
     font-weight: bold;
-    color: var(--preto); /* Ajuste de cor para nomes */
+    color: var(--_texto_preto);
     margin-bottom: 1rem;
 }
 
@@ -1022,72 +1061,68 @@ h3, h6 {
     height: auto;
 }
 
-/* Colunas de links na seção 06 */
+
 .coluna {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    gap: 0.5rem;
+    align-items: flex-start; 
+    gap: 0.5rem; 
 }
 
 .titulo {
     font-size: 1rem;
     font-weight: bold;
-    color: var(--preto); /* Ajuste de cor para títulos */
-    margin-bottom: 1rem;
+    color: var(--_texto_preto);
+    margin-bottom: 1rem; 
 }
 
-/* Estilo para os links dentro das colunas */
 .coluna a {
     font-size: 0.875rem;
-    color: var(--preto);
+    color: var(--_texto_preto);
     text-decoration: none;
     transition: color 0.3s;
 }
 
 .coluna a:hover {
-    color: #007bff; /* Cor de hover para os links */
+    color: #007bff; 
 }
 
-/* --- Responsividade para a Sessão 06 --- */
 
-/* Tela média (até 1024px) */
 @media (max-width: 1024px) {
     .sessao-06-esquerda {
-        margin-left: -2rem; /* Reduz o deslocamento lateral */
+        margin-left: -2rem; 
     }
 }
 
-/* Tela pequena (até 768px) */
+
 @media (max-width: 768px) {
     .sessao-06-esquerda {
-        margin-left: 0;
-        text-align: center;
+        margin-left: 0; 
+        text-align: center; 
     }
 
     .content-sessao-06 {
         flex-direction: column;
-        align-items: center;
-        gap: 2rem; /* Reduz o espaçamento entre colunas */
+        align-items: center; 
+        gap: 2rem;
     }
 
     .sessao-06-esquerda img {
-        max-width: 70%; /* Reduz o tamanho da imagem */
+        max-width: 70%; 
     }
 
     .coluna {
-        align-items: center; /* Centraliza o conteúdo das colunas */
+        align-items: center; 
     }
 }
 
-/* Tela muito pequena (até 480px) */
 @media (max-width: 480px) {
     .sessao-06 {
         padding: 3rem 1rem;
     }
 
     .sessao-06-esquerda img {
-        max-width: 60%; /* Ajusta ainda mais o tamanho da imagem */
+        max-width: 60%; 
     }
 }
 
