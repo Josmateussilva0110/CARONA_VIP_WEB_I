@@ -495,15 +495,64 @@ h3, h6 {
     height: auto;
 }
 
-/* Responsividade */
-@media (max-width: 768px) {
+@media (max-width: 1426px) {
+
+    .imagem-seguranca img {
+        display: none;
+    }
+    .content-sessao-02 p {
+        font-size: 1.8rem; 
+        margin: -10rem auto 0 auto; 
+    }
+
+    .texto-sessao-02 {
+        position: relative; /* Alinha o texto abaixo do anterior sem usar posição absoluta */
+        top: 0;
+        left: 0;
+        width: 100%;
+        text-align: center; 
+        font-size: 1rem;
+        margin-top: 2rem; /* Espaçamento entre o título e o texto */
+    }
+
+
+    .imagem-localizacao {
+        top: 50%; 
+        right: -17rem; 
+        transform: translateY(-30%); 
+    }
+
+    .imagem-localizacao img {
+        width: 15rem; 
+    }
+
+    .imagem-malas {
+        top: 50%; 
+        left: -17rem; 
+        transform: translateY(-1%); 
+    }
+
+    .imagem-malas img {
+        width: 15rem; 
+    }
+}
+
+@media (max-width: 840px) {
+
     .sessao-02 {
         padding: 6rem 1rem; /* Ajusta o padding para telas menores */
     }
+    .imagem-localizacao img {
+        display: none;
+    }
+
+    .imagem-malas img {
+        display: none;
+    }
 
     .content-sessao-02 p {
-        font-size: 1.25rem; /* Ajusta o tamanho da fonte */
-        margin: 0 auto 3rem auto; /* Ajusta a margem para se adequar ao design */
+        font-size: 1.25rem; 
+        margin: 0 auto 3rem auto; 
     }
 
     .texto-sessao-02 {
@@ -511,29 +560,21 @@ h3, h6 {
         top: 0;
         left: 0;
         width: 100%; /* Garante que o texto ocupe toda a largura */
-        text-align: center; /* Alinha o texto ao centro */
-        font-size: 1rem; /* Ajuste de fonte */
-        margin-top: 2rem; /* Espaçamento entre o título e o texto */
+        text-align: center; 
+        font-size: 1rem; 
+        margin-top: 2rem; 
     }
 
     .texto-sessao-02 h4 {
-        font-size: 0.875rem; /* Ajuste do tamanho do subtítulo */
+        font-size: 0.875rem; 
         font-weight: normal;
         text-align: center;
     }
 
-    .imagem-seguranca img,
-    .imagem-localizacao img,
-    .imagem-malas img {
-        display: none; /* Esconde as imagens em telas menores */
-    }
-
     .content-sessao-02 {
-        margin-top: 5rem; /* Garante que o conteúdo tenha um espaçamento adequado do topo */
+        margin-top: 5rem; 
     }
 }
-
-
 
 
 /* --- Sessão 03 --- */
