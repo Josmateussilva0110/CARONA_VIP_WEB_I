@@ -240,8 +240,9 @@ h3, h6 {
     border: none;
     outline: none;
     font-size: 1rem;
-    border-radius: 20px 20px;
-    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Certifica-se de ocupar todo o espaço disponível */
 }
 
 .search-bar button {
@@ -424,6 +425,173 @@ h3, h6 {
 
 /* RESPONSIVIDADE */
 
+/* Estilos para telas pequenas */
+@media (max-width: 768px) {
+    .sessao-01 {
+        padding: 8rem 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .sessao-01 .imagem-sessao-01 {
+        display: none; /* Remove a imagem dos carros em telas pequenas */
+    }
+
+    .content-sessao-01 {
+        margin-bottom: 1rem;
+    }
+
+    .seguir-rotas {
+        width: 3rem; /* Aumenta a largura do botão */
+        height: 1rem; /* Ajusta a altura */
+        background-color: var(--preto);
+        color: var(--_fundo_branco);
+        padding: 0.75rem 2rem;
+        border-radius: 25px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: background-color 0.3s;
+    }
+
+    .seguir-rotas:hover {
+        background-color: #003f47;
+    }
+
+    /* Reduzindo o tamanho da fonte do texto */
+    .sessao-01 h1 {
+        font-size: 1.0rem; /* Reduz o tamanho do título */
+    }
+
+    .sessao-01 p {
+        font-size: 0.5rem; /* Reduz o tamanho do texto */
+    }
+
+    /* Ajustes para os links do menu */
+    .menu-links a {
+        font-size: 0.6rem; /* Diminuindo o tamanho da fonte dos links do menu */
+    }
+
+    /* Ajustando o tamanho da logo */
+    .logo img {
+        width: 7rem; /* Reduz o tamanho da logo */
+        height: auto;
+    }
+
+    .texto-esquerda-sessao-01 {
+        position: absolute;
+        top: 50%; /* Centraliza verticalmente */
+        left: 50%; /* Centraliza horizontalmente */
+        transform: translate(-50%, -50%); /* Ajusta o ponto de referência para o centro */
+        text-align: center; /* Centraliza o texto dentro do elemento */
+        font-size: 1.5rem; /* Ajusta o tamanho da fonte para telas menores */
+        line-height: 1.5; /* Ajusta o espaçamento entre linhas */
+        margin-top: 10px;
+    }
+
+    .texto-esquerda-sessao-01 img{
+        position: relative;
+        width: 15rem; /* Reduz o tamanho da texto */
+        height: auto;
+    }
+
+
+    .search-bar {
+        padding: 8rem 0;
+    }
+
+    .search-container {
+        position: relative;
+        margin: 0 auto; /* Centraliza horizontalmente */
+    }
+
+    .search-bar input[type="text"] {
+        font-size: 0.8rem; /* Fonte menor */
+        padding: 0.4rem; /* Preenchimento menor */
+        height: 1.8rem; /* Altura reduzida */
+    }
+
+    .search-bar button {
+        font-size: 0.7rem; /* Fonte menor no botão */
+        padding: 0.4rem 0.8rem; /* Tamanho menor do botão */
+        height: 2rem; /* Altura menor */
+        margin: -1 auto; /* Centraliza horizontalmente */
+        left: 72%;
+    }
+
+    .seguir-rotas a {
+        font-size: 0.60rem; /* Ajusta o tamanho do texto do link */
+    }
+    
+}   
+
+/* Estilos para telas médias */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .sessao-01 .imagem-sessao-01 {
+        display: none; /* Remove a imagem dos carros em telas pequenas */
+    }
+    .texto-esquerda-sessao-01 {
+        position: absolute;
+        top: 50%; /* Centraliza verticalmente */
+        left: 50%; /* Centraliza horizontalmente */
+        transform: translate(-50%, -50%); 
+        text-align: center; 
+        margin-top: 10px;
+    }
+
+    .texto-esquerda-sessao-01 img{
+        position: relative;
+        width: 18rem; /* Reduz o tamanho da texto */
+        height: auto;
+    }
+
+    .seguir-rotas {
+        width: 5rem; /* Aumenta a largura do botão */
+        height: 2rem; /* Ajusta a altura */
+        background-color: var(--preto);
+        color: var(--_fundo_branco);
+        padding: 0.75rem 2rem;
+        border-radius: 25px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: background-color 0.3s;
+    }
+
+    .seguir-rotas:hover {
+        background-color: #003f47;
+    }
+}
+
+/* Estilos para telas grandes */
+@media (min-width: 1025px) {
+    .sessao-01 {
+        padding: 16.875rem;
+    }
+
+    .imagem-sessao-01 {
+        right: 5rem;
+        padding-right: 5rem;
+    }
+
+    .texto-esquerda-sessao-01 {
+        padding-left: 7.1875rem;
+        left: 1.875rem;
+    }
+
+    .search-bar {
+        max-width: 31.25rem;
+    }
+
+    .search-container button {
+        left: 23.25rem;
+    }
+}
 
 
 /* --- Sessão 02 --- */
@@ -715,6 +883,7 @@ h3, h6 {
 }
 
 /* Responsividade */
+
 @media (max-width: 1024px) {
     .sessao-03 {
         padding: 6rem;
